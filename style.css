@@ -1,0 +1,539 @@
+html {
+    scroll-behavior: smooth;
+    user-select: none;
+}
+body {
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+#nav {
+    position: fixed;
+    background-color: transparent;
+    height: 80px;
+    width: 100%;
+    z-index: 1000;
+}
+#section-main {
+    position: relative;
+    background-image: linear-gradient(to top, #000000 30%, #0F1559 90%);
+    background-size: 200% 200%;
+    animation: gradientAnimation 3s linear infinite alternate;;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+@keyframes gradientAnimation {
+    0% {
+        background-position: 10% 10%;
+    }
+    100% {
+        background-position: 90% 90%;
+    }
+}
+#section-main2-1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+#section-main2-2 {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 150vh;
+}
+#section-main2-3 {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 113vh;
+    text-align: center;
+}
+#section-main3 {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #1E1C1F;
+}
+#section-main4 {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-image: url(img/contact.png);
+    background-size: cover;
+    background-position: cover;
+    background-repeat: no-repeat;
+}
+a:link {
+    color : white;
+}
+a:visited {
+    color : white;
+}
+a:hover {
+    color : white;
+}
+a:active {
+    color : white
+}
+a {
+    text-decoration: none;
+}
+[data-scroll] {
+    opacity: 0;
+    will-change: transform, scale, opacity;
+    transform: translateY(6rem) scale(0.93);
+    transition: opacity 1s;
+}
+[data-scroll="in"] {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+[data-scroll="out"] {
+    opacity: 0;
+}
+.logo {
+    position: fixed;
+    top: 5px;
+    z-index: 1000;
+}
+.intro {
+    position: fixed;
+    font-family: "Inter";
+    font-size: 25px;
+    font-weight: 900;
+    top: 28px;
+    right: 420px;
+    color: #fff;
+    scroll-behavior: smooth;
+    z-index: 1000;
+}
+.about {
+    position: fixed;
+    font-family: "Inter";
+    font-size: 25px;
+    font-weight: 900;
+    top: 28px;
+    right: 310px;
+    color: #fff;
+    scroll-behavior: smooth;
+    
+    z-index: 1000;
+}    
+.works {
+    position: fixed;
+    font-family: "Inter";
+    font-size: 25px;
+    font-weight: 900;
+    top: 28px;
+    right: 192px;
+    color: #fff;
+    z-index: 1000;
+}  
+.contact {
+    position: fixed;
+    font-family: "Inter";
+    font-size: 25px;
+    font-weight: 900;
+    top: 28px;
+    right: 45px;
+    color: #fff;
+    z-index: 1000;
+}
+a:link {
+    color : #fff;
+}
+.intro-text {
+    position: relative;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 110px;
+    font-weight: 900;
+    letter-spacing: 5px;
+    bottom: 80px;
+    right: 180px;
+}
+.intro-text2 {
+    position: absolute;
+    color: #fff;
+    margin: 50px 0 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    letter-spacing: 20px;
+    right: 475px;
+}
+.about-text {
+    position: absolute;
+    width: 353px;
+    height: 144px;
+    color: #fff;
+    font-family: "Noto Sans KR", serif;
+    font-size: 45px;
+    font-weight: 800;
+    text-align: left;
+    top: 170px;
+    left: 580px;
+}
+.about-text2 {
+    position: absolute;
+    width: 670px;
+    height: 60px;
+    color: #fff;
+    font-family: "Noto Sans KR", serif;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: left;
+    letter-spacing: 0.5px;
+    top: 390px;
+    left: 530px;
+}
+.about-text3 {
+    position: absolute;
+    color: #fff;
+    font-family: "inter";
+    font-size: 35px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    top: 0px;
+    left: 600px;
+}
+.about-text4 {
+    position: absolute;
+    width: 445px;
+    height: 30px;
+    font-family: "Noto Sans KR", serif;
+    font-size: 25px;
+    font-weight: 900;
+    color: #fff;
+    top: 169px;
+    left: 165px;
+}
+.about-text5 {
+    position: absolute;
+    width: 445px;
+    height: 30px;
+    font-family: "Noto Sans KR", serif;
+    font-size: 25px;
+    font-weight: 900;
+    text-align: left;
+    color: #fff;
+    top: 369px;
+    right: 165px;
+}
+.about-text6 {
+    position: absolute;
+    width: 445px;
+    height: 30px;
+    font-family: "Noto Sans KR", serif;
+    font-size: 25px;
+    font-weight: 900;
+    text-align: right;
+    color: #fff;
+    top: 569px;
+    left: 165px;
+}
+.about-text7 {
+    position: absolute;
+    width: 445px;
+    height: 30px;
+    font-family: "Noto Sans KR", serif;
+    font-size: 25px;
+    font-weight: 900;
+    text-align: left;
+    color: #fff;
+    top: 769px;
+    right: 165px;
+}
+.about-text8 {
+    position: absolute;
+    width: 445px;
+    height: 30px;
+    font-family: "Noto Sans KR", serif;
+    font-size: 25px;
+    font-weight: 900;
+    color: #fff;
+    top: 969px;
+    left: 165px;
+    text-align: right;
+}
+.about-text9 {
+    position: absolute;
+    font-family: "Inter";
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #fff;
+    top: 345px;
+    left: 660px;
+}
+.contact-text {
+    position: absolute;
+    font-family: "Noto Sans KR", serif;
+    font-size: 50px;
+    font-weight: 900;
+    letter-spacing: 7.5px;
+    color: #000;
+    top: 285px;
+    left: 425px;
+}
+.contact-text2 {
+    position: absolute;
+    font-family: "Inter";
+    font-size: 25px;
+    font-weight: 600;
+    color: #777;
+    top: 355px;
+    left: 430px;
+}
+.contact-text2 {
+    position: absolute;
+    font-family: "Inter";
+    font-size: 25px;
+    font-weight: 700;
+    color: #777;
+    top: 355px;
+    left: 430px;
+}
+.contact-text3 {
+    position: absolute;
+    font-family: "Inter";
+    font-size: 25px;
+    font-weight: 700;
+    color: #000;
+    top: 450px;
+    left: 430px;
+}
+.contact-text4 {
+    position: absolute;
+    font-family: "Inter";
+    font-size: 25px;
+    font-weight: 700;
+    color: #000;
+    top: 490px;
+    left: 430px;
+}
+.contact-text5 {
+    position: absolute;
+    font-family: "Inter";
+    font-size: 25px;
+    font-weight: 700;
+    color: #000;
+    top: 530px;
+    left: 430px;
+}
+.about-line {
+    position: absolute;
+    width: 3px;
+    height: 950px;
+    transform: rotate(-180deg);
+    background-color: #fff;
+    top: 100px;
+    left: 770px;
+}
+.about-line2 {
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: #fff;
+    top: 189px;
+    left: 635px;
+}
+.about-line3 {
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: #fff;
+    top: 389px;
+    right: 635px;
+}
+.about-line4 {
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: #fff;
+    top: 589px;
+    left: 635px;
+}
+.about-line5 {
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: #fff;
+    top: 789px;
+    right: 635px;
+}
+.about-line6 {
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: #fff;
+    top: 989px;
+    left: 635px;
+}
+.about-line7 {
+    position: absolute;
+    top: 160px;
+    left: 505px
+}
+.about-line8 {
+    position: absolute; 
+    top: 160px;
+    right: 505px
+}
+.about-line9 {  
+    position: absolute;
+    top: 405px;
+    right: 730px;
+}
+.left-line {
+    position: absolute;
+    top: 320px;
+    left: 489px;
+}
+.right-line {
+    position: absolute;
+    top: 320px;
+    right: 426px;
+}
+.contact-line {
+    position: absolute;
+    width: 720px;
+    height: 0.5px;
+    background-color: #000;
+    top: 400px;
+    right: 410px;
+}
+.hand {
+    position: absolute;
+    top: 80px;
+    left: 700px;
+}
+.hashtag {
+    position: absolute;
+    top: 550px;
+    left: 550px;
+}
+.face {
+    position: absolute;
+    top: 120px;
+    left: 130px;
+}
+.tech {
+    position: absolute;
+    top: 110px;
+    left: 235px;
+}
+.tech2 {
+    position: absolute;
+    top: 140px;
+    right: 363px;
+}
+.tech3 {
+    position: absolute;         
+    top: 560px;
+    left: 630px;
+}
+.profile {
+    position: absolute;
+    top: 100px;
+    left: 120px;
+}
+.share {
+    position: absolute;
+    top: 605px;
+    left: 580px;
+    z-index: 1;
+}
+.share-text {
+    position: absolute;
+    font-family: "Noto Sans KR", serif;
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    color: #999;
+    top: 605px;
+    left: 600px;
+    z-index: 1;
+}
+.share2 {
+    position: absolute;
+    top: 551px;
+    right: 350px;
+    z-index: 1;
+}
+.share-text2 {
+    position: absolute;
+    font-family: "Noto Sans KR", serif;
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    color: #999;
+    top: 551px;
+    right: 271px;
+    z-index: 1;
+}
+.Potfolio {
+    position: absolute;
+    top: 0px;
+    left: 800px;
+}
+.namecard {
+    position: absolute;
+    width: 760px;
+    height: 470px;
+    top: 170px;
+    right: 390px;
+}
+.school {
+    position: absolute;
+    top: 150px;
+    right: 410px
+}
+.logo2 {
+    position: absolute;
+    top: 140px;
+    right: 340px;
+}
+.discord {
+    position: absolute;
+    top: 445px;
+    right: 550px;
+}
+.discord {
+    position: absolute;
+    top: 445px;
+    right: 550px;
+}
+.instagram {
+    position: absolute;
+    top: 445px;
+    right: 450px;
+}
+.github {
+    position: absolute;
+    top: 535px;
+    right: 500px;
+}
